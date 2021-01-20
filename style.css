@@ -1,0 +1,187 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+}
+ /* header */
+header nav {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 25px;
+    position: relative;
+}
+
+
+header nav a::before {
+    content: '';
+    position: absolute;
+    top: -39px;
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+
+}
+
+#accomodations_anchor:hover ~ header nav a::before {
+    background-color: red;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+
+}
+
+/* premiere section -titre -barre de recherche -filtres */
+
+
+/* barre de recherche */
+#title {
+    margin-bottom: 20px;
+}
+
+#search {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#locate_icon {
+    display: block;
+    width: 52px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+.fas.fa-map-marker-alt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search_box {
+    border: 2px solid #f2f2f2;
+    text-align: center;
+}
+
+#search_btn {
+    background-color: #0065FC;
+    color: white;
+    width: 134px;
+    cursor: pointer;
+    display: inline;
+    border-radius: 0 10px 10px 0; 
+    text-align: center;
+    padding-top: 15px ;
+}
+
+
+/* boutons filtres */
+
+#filter {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+#title_filter {
+    padding-top: 15px;
+}
+
+.bubble .fas {
+    background-color: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 17px 17px 17px 17px;
+    color: #0065FC;
+    left: -2px;
+    top: -2px;
+}
+
+.bubble {
+    height: 50px;
+    margin:0 0 10px 15px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+
+.bubble p {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    margin-left: 20px;
+    transform: translateY(-50%);
+}
+
+/* gestion taille pour chaque filtres */
+
+.pet_autorized {
+    width: 241px;
+}
+.economic {
+    width: 195px;
+}
+.familly {
+    width: 150px;
+}
+.romantic {
+    width: 181px;
+}
+
+/* footer de la premiere section */
+#search_and_filter footer {
+    font-size: 15px;
+}
+
+
+.fa-info-circle {
+    height: 25px;
+    width: 25px;
+    background: #0065fc;
+    color: white;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* section hébergements */
+
+/* hébergements à Marseille */
+
+
+
