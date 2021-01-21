@@ -35,11 +35,17 @@ header nav a::before {
     content: '';
     position: absolute;
     top: -39px;
-    height: 2px;
+    height: 0px;
     width: 100%;
     background-color: blue;
 
 }
+
+header nav a:hover::before {
+    height: 2px;
+}
+
+
 
 #accomodations_anchor:hover ~ header nav a::before {
     background-color: red;
@@ -181,7 +187,148 @@ header nav a::before {
 
 /* section hébergements */
 
+#accomodations {
+    display: flex;
+    justify-content: space-between;
+}
+
+#local_accomodations {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    flex: 2;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    position: relative;
+}
+
+#popular_accomodations {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    position: relative;
+}
+
+.section_title {
+    margin: 40px 0 20px 40px;
+}
+
 /* hébergements à Marseille */
 
 
+#local {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+}
 
+.lodge {
+    width: 246px;
+    height: 200px;
+    background-color:white;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 20px;
+}
+.local_picture_box {
+    width: 95%;
+    height: 60%;
+    /* border: 2px solid black; */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    /* text-align: center;
+    display: table-cell;
+    vertical-align: middle; */
+}
+
+.picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.local_legende {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    margin-left: 10px;
+}
+
+/* hebergements populaire */
+
+.popular_lodge {
+    width: 345px;
+    display: flex;
+    flex-direction: row;
+}
+
+.popular_picture_box {
+    height: 135px;
+    width: 135px;
+    border-radius: 25px 0 0 25px;
+    overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+}
+
+
+
+
+
+.pic_1 {
+    background: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.pic_2 {
+    background: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+.pic_3 {
+    background: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+.pic_4 {
+    background: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+.pic_5 {
+    background: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+.pic_6 {
+    background: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+.pic_7 {
+    background: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+.pic_8 {
+    background: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.pic_9 {
+    background: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+.picture_box {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.popular_picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 135px;
+
+    /* width: 100%; */
+}
