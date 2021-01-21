@@ -12,7 +12,7 @@ a {
 
 body {
     font-family: 'Raleway', sans-serif;
-    width: 1440px;
+    width: 1340px;
     max-width: 90%;
     margin: auto;
 }
@@ -43,12 +43,6 @@ header nav a::before {
 
 header nav a:hover::before {
     height: 2px;
-}
-
-
-
-#accomodations_anchor:hover ~ header nav a::before {
-    background-color: red;
 }
 
 
@@ -173,118 +167,87 @@ header nav a:hover::before {
     font-size: 15px;
 }
 
-
-.fa-info-circle {
-    height: 25px;
+#info {
+    display: inline-block;
     width: 25px;
-    background: #0065fc;
-    color: white;
-    border: 1px solid #f2f2f2;
-    border-radius: 50%;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-/* section hébergements */
-
-#accomodations {
-    display: flex;
-    justify-content: space-between;
-}
-
-#local_accomodations {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    flex: 2;
-    background-color: #f2f2f2;
-    border-radius: 25px;
+    height: 25px;
+    color: #0065fc;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 50px;
     position: relative;
 }
 
-#popular_accomodations {
-    flex: 1;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-    position: relative;
+#search_and_filter footer {
+    vertical-align: middle;
 }
 
-.section_title {
-    margin: 40px 0 20px 40px;
-}
-
-/* hébergements à Marseille */
-
-
-#local {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: absolute;
-    bottom: 0;
-}
-
-.lodge {
-    width: 246px;
-    height: 200px;
-    background-color:white;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    border-radius: 25px;
-    margin: 20px;
-}
-.local_picture_box {
-    width: 95%;
-    height: 60%;
-    /* border: 2px solid black; */
-    margin: auto;
-    overflow: hidden;
-    border-radius: 25px 25px 0 0;
-    position: relative;
-    /* text-align: center;
-    display: table-cell;
-    vertical-align: middle; */
-}
-
-.picture {
+.fa-info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
 }
 
-.local_legende {
+/* section accomodations */
+
+#accomodations {
+    display: flex;
+    margin-top: 30px;
+}
+
+#local_accomodations {
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    flex: 2;
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    margin: auto;
-    margin-left: 10px;
+    justify-content:space-evenly;
 }
 
-/* hebergements populaire */
-
-.popular_lodge {
-    width: 345px;
+#popular_accomodations {
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    flex: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.popular_picture_box {
-    height: 135px;
-    width: 135px;
-    border-radius: 25px 0 0 25px;
-    overflow: hidden;
-    margin-left: 10px;
-    position: relative;
+h3 {
+    font-size:medium ;
 }
 
+p {
+    font-size: small;
+}
 
+.fa-star {
+    font-size: 0.7em;
+    color: #0065fc;
+    letter-spacing: -4px;
+}
 
+/* section hébergements à marseille */
 
+#local_accomodations h2 {
+    margin: 20px 0 10px 25px;
+}
+
+#local {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;}
+
+.local_lodge {
+    width: 240px;
+    height: 200px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 25px
+}
 
 .pic_1 {
     background: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -307,6 +270,36 @@ header nav a:hover::before {
 .pic_6 {
     background: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
+
+.local_picture_box {
+    width: 228px;
+    height: 112px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    margin: auto;
+    margin-top: 6px;
+    
+}
+
+.local_legende {
+    margin: 10px 0 10px 20px;
+    line-height: 1.4em;
+}
+
+.more  p{
+    margin: 20px 0 34px 25px;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.popular_title {
+    margin: -18px 0 -6px -25px;
+}
+
+/* les plus populaires */
+
 .pic_7 {
     background: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
@@ -317,18 +310,28 @@ header nav a:hover::before {
     background: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 
-.picture_box {
-    background-size: cover;
-    background-repeat: no-repeat;
+.popular_lodge {
+    width: 345px;
+    height: 145px;
+    background-color: white;
+    border-radius: 25px; 
+    display: flex;  
+    justify-content: baseline;
 }
 
-.popular_picture {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 130px;
-    height: 135px;
+.popular_picture_box {
+    width: 127px;
+    height: 133px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+    margin: 6px;
+}
 
-    /* width: 100%; */
+.popular_legende {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 10px;
+
 }
