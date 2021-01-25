@@ -10,55 +10,57 @@
     <title>Reservia</title>
 </head>
 <body>
-    <header id="header">
+    <header class="header">
 
-        <div id="logo">
+        <div class="logo">
             <img src="images/logo/Reservia.svg" alt="logo_resevia">
 
         </div>
 
-        <nav>
-            <a href="#accomodations" id="accomodations_anchor">Hébergements</a>
-            <a href="#activitys" id="activitys_anchor">Activités</a>
-            <a href="#" id="signin">S'inscrire</a>
+        <nav class="header_nav">
+            <a href="#accomodations" class="anchor accomodations_anchor">Hébergements</a>
+            <a href="#activitys" class="anchor activitys_anchor">Activités</a>
         </nav>
-    
+        
+        <div class="signin">S'inscrire</div>
     </header>
 
-   <main>
+   <main class="main">
 
-        <section id="search_and_filter">
-            <header id="title">
+        <section class="search_and_filter">
+            <header class="search_title">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </header>
 
-            <div id="search">
-                <div id="locate_icon"><i class="fas fa-map-marker-alt"></i></div>
-                <input type="text" name="search" id="search_box" value="Marseille, France">
-                <p id="search_btn">Rechercher</p>
+            <div class="search">
+                <div class="locate_icon"><i class="fas fa-map-marker-alt"></i></div>
+                <input type="text" class="search_box" value="Marseille, France">
+                <p class="search_btn">Rechercher</p>
             </div>
 
-            <div id="filter">
-                <span id="title_filter">Filtres</span>
-                <div class="bubble economic"><i class="fas fa-money-bill-wave"></i><p>Économique</p></div>
-                <div class="bubble familly"><i class="fas fa-child"></i><p>Familial</p></div>
-                <div class="bubble romantic"><i class="fas fa-heart"></i><p>Romantique</p></div>
-                <div class="bubble pet_autorized"><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
+            <div class="filter">
+                <span class="filter_title">Filtres</span>
+                <div class="bubble_box">
+                    <div class="bubble economic"><i class="fas fa-money-bill-wave"></i><p>Économique</p></div>
+                    <div class="bubble familly"><i class="fas fa-child"></i><p>Familial</p></div>
+                    <div class="bubble romantic"><i class="fas fa-heart"></i><p>Romantique</p></div>
+                    <div class="bubble pet_autorized"><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
+                </div>
             </div>
 
             <footer>
-                <span id="info"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville
+                <span class="info"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville
             </footer>
 
         </section>
 
-        <div id="accomodations">
+        <div class="accomodations" id="accomodations">
 
-            <section id="local_accomodations">
+            <section class="local_accomodations">
                 <h2 class="section_title">Hébergements à Marseille</h2>
 
-                <div id="local">
+                <div class="local">
                     
                     <div class="local_lodge lodge">
 
@@ -205,7 +207,7 @@
 
             </section>
 
-            <section id="popular_accomodations">
+            <section class="popular_accomodations">
                 <div class="popular_title">
                     <h2 class="section_title">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                     
@@ -286,40 +288,34 @@
             </section>
         </div>
 
-        <section id="activity_section">
+        <section class="activity_section" id="activitys">
 
             <h2>Activités à Marseille</h2>
             
             <div class="activity">
 
-                <div class="local_activity">
-                    <div class="activity_picture_box activity_picture_1"></div>
-                    <div class="activity_legende">Vieux Port</div>
+                <div class="local_activity activity_1">
+                    <div class="activity_picture_box activity_picture_1"><div class="activity_legende">Vieux Port</div></div>                   
                 </div>
 
-                <div class="local_activity">
-                    <div class="activity_picture_box activity_picture_2"></div>
-                    <div class="activity_legende">Fort de Pomègues</div>
+                <div class="local_activity activity_2">
+                    <div class="activity_picture_box activity_picture_2"><div class="activity_legende">Fort de Pomègues</div></div>
                 </div>
 
-                <div class="local_activity">
-                    <div class="activity_picture_box activity_picture_3"></div>
-                    <div class="activity_legende">Îles du Frioul</div>
+                <div class="local_activity activity_3">
+                    <div class="activity_picture_box activity_picture_3"><div class="activity_legende">Îles du Frioul</div></div>
                 </div>
 
-                <div class="local_activity">
-                    <div class="activity_picture_box activity_picture_4"></div>
-                    <div class="activity_legende">Parc National des Calanques</div>
+                <div class="local_activity activity_4">
+                    <div class="activity_picture_box activity_picture_4"><div class="activity_legende">Parc National des Calanques</div></div>
                 </div>
 
-                <div class="local_activity">
-                    <div class="activity_picture_box activity_picture_5"></div>
-                    <div class="activity_legende">Notre-Dame-de-la_Garde</div>
+                <div class="local_activity activity_5">
+                    <div class="activity_picture_box activity_picture_5"><div class="activity_legende">Notre-Dame-de-la_Garde</div></div>    
                 </div>
 
-                <div class="local_activity">
-                    <div class="activity_picture_box activity_picture_6"></div>
-                    <div class="activity_legende">Parc Longchamp</div>
+                <div class="local_activity activity_6">
+                    <div class="activity_picture_box activity_picture_6"><div class="activity_legende">Parc Longchamp</div></div>
                 </div>
 
             </div>
@@ -328,9 +324,9 @@
 
    </main>
     
-    <footer>
+    <footer class="footer">
         
-        <div>
+        <div class="footer_list">
             <h2>A propos</h2>
             <ul>
                 <li>Fonctionnement du site</li>
@@ -339,7 +335,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="footer_list">
             <h2>Nos hébergements</h2>
             <ul>
                 <li>Charte qualité</li>
@@ -347,7 +343,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="footer_list">
             <h2>Assistance</h2>
             <ul>
                 <li>Centre d'aide</li>
