@@ -459,7 +459,7 @@ a {
 }
 
 .footer_list {
-    margin: 20px 170px 20px 0;
+    margin: 20px 150px 20px 0;
     line-height: 2em;
 }
 
@@ -533,6 +533,14 @@ a {
 
     .activity_6 {
         grid-area: 9 / 7 / 13 / 13;
+    }
+
+    .footer_list {
+        margin-right: 75px;
+    }
+
+    .footer li {
+        font-size: 0.9rem;
     }
 }
 
@@ -629,6 +637,10 @@ a {
         max-width: 95%;
     }
 
+    .local_card {
+        width: 345px;
+    }
+
     .section_title {
         margin-left: 9px;
     }
@@ -647,7 +659,7 @@ a {
     }
 
     .activity_card {
-        width: 340px;
+        width: 345px;
         max-width: 95%;
         height: 200px;
         margin-bottom: 25px;
