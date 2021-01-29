@@ -49,9 +49,7 @@ a {
 
 .header_nav {
     display: flex;
-    /* height: 100%; */
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     margin-right: 150px;
 }
@@ -253,10 +251,6 @@ a {
     background-color: #f2f2f2;
     border-radius: 16px;
     flex: 1;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
 }
 
 .fa-star {
@@ -280,7 +274,7 @@ a {
 
 .local_card {
     background-color: white;
-    width: 240px;
+    min-width: 240px;
     height: 200px;
     margin: 0 12px 25px 12px;
     border-radius: 25px;
@@ -296,7 +290,6 @@ a {
     object-fit: cover;
     object-position: center;
 }
-
 
 .local_legende {
     line-height: 1.3rem;
@@ -356,122 +349,6 @@ a {
     margin-left: 80px;
 }
 
-/* .local_lodge {
-    width: 240px;
-    height: 200px;
-    background-color: white;
-    border-radius: 25px;
-    margin: 25px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px #f2f2f2, -5px -5px 5px #f2f2f2;
-}
-
-.pic_1 {
-    background: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-
-.pic_2 {
-    background: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-
-.pic_3 {
-    background: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-
-.pic_4 {
-    background: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.pic_5 {
-    background: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-.pic_6 {
-    background: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
-
-.local_picture_box {
-    width: 228px;
-    height: 112px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
-    margin: auto;
-    margin-top: 6px;
-    
-}
-
-.local_legende {
-    margin: 10px 0 10px 20px;
-    line-height: 1.3em;
-}
-
-.more  p{
-    margin: 20px 0 34px 25px;
-    font-weight: bolder;
-    font-size: 1.3em;
-} */
-
-/* les plus populaires */
-
-/* .popular_title {
-    margin: 18px 0 6px 25px;
-}
-
-.fa-chart-line {
-    margin-left: 100px;
-}
-
-.pic_7 {
-    background: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-
-.pic_8 {
-    background: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-
-.pic_9 {
-    background: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
-
-.popular {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.popular_lodge {
-    width: 345px;
-    height: 145px;
-    background-color: white;
-    border-radius: 25px;
-    display: flex;
-    justify-content: baseline;
-    margin: 25px;
-    cursor: pointer;
-}
-
-.popular_picture_box {
-    width: 127px;
-    height: 133px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 20px 0 0 20px;
-    margin: 6px;
-}
-
-.popular_legende {
-    width: 150px;
-    margin-top: 15px;
-    margin-left: 10px;
-    line-height: 1.3em;
-    position: relative;
-}
-
-.popular_stars {
-    position: absolute;
-    bottom: 10px;
-} */
 
 /* etoiles gisées */
 
@@ -543,61 +420,6 @@ a {
     padding: 15px 0 0 15px;
 }
 
-/* .activity_picture_1 {
-    background: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-}
-
-.activity_picture_2 {
-    background: url("");
-}
-
-.activity_picture_3 {
-    background: url("");
-}
-
-.activity_picture_4 {
-    background: url("");
-}
-
-.activity_picture_5 {
-    background: url("");
-}
-
-.activity_picture_6 {
-    background: url("");
-}
-
-.local_activity {
-    width: 290px;
-    border-radius: 18px;
-    box-shadow: 5px 5px 5px #f2f2f2, -5px 5px 5px #f2f2f2;
-    overflow: hidden;
-    cursor: pointer;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.activity_picture_box {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.activity_legende {
-    position: absolute;
-    bottom: 0;
-    height: 55px;
-    width: 100%;
-    background-color: white;
-    font-weight: bold;
-    padding: 20px 0 0 20px;
-} */
-
 .activity_1 {
     grid-area: 1 / 1 / 13 / 4;
 }
@@ -647,65 +469,31 @@ a {
 
 /* parties responsives */
 
-@media screen and (max-width: 1300px) {
-    /* .activity_1 {
-        grid-area: 1 / 1 / 8 / 5;
-    }
-    
-    .activity_2 {
-        grid-area: 8 / 1 / 13 / 5;
-    }
-    
-    .activity_3 {
-        grid-area: 1 / 5 / 5 / 9;
-    }
-    
-    .activity_4 {
-        grid-area: 5 / 5 / 13 / 9;
-    }
-    
-    .activity_5 {
-        grid-area: 1 / 9 / 7 / 13;
-    }
-    
-    .activity_6 {
-        grid-area: 7 / 9 / 13 / 13;
-    }
-    
-} */
 /* tablettes */
 
 @media screen and (max-width: 1024px) {
-    .activity_1 {
-        grid-area: 1 / 1 / 5 / 7;
-    }
-    
-    .activity_2 {
-        grid-area: 5 / 1 / 9 / 7;
-    }
-    
-    .activity_3 {
-        grid-area: 9 / 1 / 13 / 7;
-    }
-    
-    .activity_4 {
-        grid-area: 1 / 7 / 5 / 13;
-    }
-    
-    .activity_5 {
-        grid-area: 5 / 7 / 9 / 13;
-    }
-    
-    .activity_6 {
-        grid-area: 9 / 7 / 13 / 13;
-    }
+
 
     .main {
         max-width: 100%;
     }
 
+    .search_and_filter {
+        width: 90%;
+        margin: auto;
+    }
+
     .accomodations {
         flex-direction: column-reverse;
+    }
+
+    .local_accomodations {
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .local {
+        align-items: center;
     }
 
     .popular_accomodations {
@@ -719,13 +507,32 @@ a {
         align-items: center;
     }
 
-    .local_accomodations {
-        margin: 0;
-        background-color: transparent;
+    .activity_title {
+        margin-left: 34px;
     }
 
-    .local {
-        align-items: center;
+    .activity_1 {
+        grid-area: 1 / 1 / 5 / 7;
+    }
+
+    .activity_2 {
+        grid-area: 5 / 1 / 9 / 7;
+    }
+
+    .activity_3 {
+        grid-area: 9 / 1 / 13 / 7;
+    }
+
+    .activity_4 {
+        grid-area: 1 / 7 / 5 / 13;
+    }
+
+    .activity_5 {
+        grid-area: 5 / 7 / 9 / 13;
+    }
+
+    .activity_6 {
+        grid-area: 9 / 7 / 13 / 13;
     }
 }
 
@@ -789,11 +596,6 @@ a {
 /* mobiles */
 
 @media screen and (max-width: 768px) {
-    /* body {
-        font-size: 0.9em;
-    } */
-
-    /* header */
 
     .main {
         width: 100%;
@@ -807,6 +609,11 @@ a {
         left: 55px;
     }
 
+    .search_btn {
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+
     .search_btn p {
         display: none;
     }
@@ -815,30 +622,12 @@ a {
         display: inline-block;
     }
 
-    /* .economic {
-        width: 177px;
-    }
-
-    .familly {
-        width: 140px;
-    }
-
-    .romantic {
-        width: 169px;
-    }
-
-    .pet_autorized {
-        width: 219px;
-    } */
-
     /* main */
-   
 
-    .local_lodge {
-        width: 90%;
+    .local_card,
+    .popular_card {
+        max-width: 95%;
     }
-
-    
 
     .section_title {
         margin-left: 9px;
@@ -850,12 +639,8 @@ a {
 
     /* activités */
 
-    .activity_title {
-        margin-left: 34px;
-    }
-
     .grid_activity {
-        /* height: auto; */
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -863,6 +648,7 @@ a {
 
     .activity_card {
         width: 340px;
+        max-width: 95%;
         height: 200px;
         margin-bottom: 25px;
     }
