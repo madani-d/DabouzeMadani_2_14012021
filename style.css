@@ -117,6 +117,7 @@ a {
     text-align: center;
     font-weight: bold;
     font-size: 1.1rem;
+    max-width:60%;
 }
 
 .search_btn {
@@ -274,7 +275,7 @@ a {
 
 .local_card {
     background-color: white;
-    min-width: 240px;
+    width: 240px;
     height: 200px;
     margin: 0 12px 25px 12px;
     border-radius: 25px;
