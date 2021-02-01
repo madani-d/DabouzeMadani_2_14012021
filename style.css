@@ -135,7 +135,7 @@ a {
     font-size: 1rem;
 }
 
-.search_btn p {
+.search_btn span {
     margin: 0 15px 0 15px;
     font-size: 1.1rem;
 }
@@ -195,7 +195,7 @@ a {
     color: #deebff;
 }
 
-.btn_filter p {
+.btn_filter span {
     font-size: 1.1rem;
     white-space: nowrap;
     margin-left: 55px;
@@ -614,7 +614,7 @@ a {
         padding: 20px;
     }
 
-    .btn_filter p {
+    .btn_filter span {
         left: 55px;
     }
 
@@ -623,7 +623,11 @@ a {
         margin-left: -10px;
     }
 
-    .search_btn p {
+    .search_box {
+        font-size: 0.9rem;
+    }
+
+    .search_btn span {
         display: none;
     }
 
