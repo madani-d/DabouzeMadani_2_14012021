@@ -159,29 +159,31 @@ a {
     margin-right: 15px;
 }
 
-.btn_filter .fas {
-    background-color: #deebff;
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    border-radius: 50%;
-    padding: 17px 17px 17px 16px;
-    color: #0065fc;
-    left: -2px;
-    top: -2px;
-    transition: all 0.4s ease-in-out;
-    font-size: 1.3rem;
-}
-
 .btn_filter {
     height: 50px;
     margin: 0 15px 10px 0;
-    background-color: #fff;
+    background-color: white;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
     position: relative;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn_filter_icon {
+    background-color: #deebff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: -2px;
+    color: #0065fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn_filter:hover {
@@ -190,7 +192,7 @@ a {
     border: 2px solid #0065fc;
 }
 
-.btn_filter:hover .fas {
+.btn_filter:hover > .btn_filter_icon {
     background-color: #0065fc;
     color: #deebff;
 }
@@ -198,7 +200,7 @@ a {
 .btn_filter span {
     font-size: 1.1rem;
     white-space: nowrap;
-    margin-left: 55px;
+    margin-left: 10px;
     margin-right: 15px;
 }
 
@@ -214,7 +216,6 @@ a {
     padding: 3px;
     margin-right: 10px;
     color: #0065fc;
-    font-size: 15px;
     border: 2px solid #f2f2f2;
     border-radius: 50px;
     position: relative;
@@ -351,30 +352,9 @@ a {
 }
 
 
-/* etoiles gisées */
+/* etoiles gises */
 
-.star_1 .fas:nth-child(5) {
-    color: #f2f2f2;
-}
-
-.star_3 .fas:nth-child(5) {
-    color: #f2f2f2;
-}
-
-.star_4 .fas:nth-child(4),
-.star_4 .fas:nth-child(5) {
-    color: #f2f2f2;
-}
-
-.star_5 .fas:nth-child(5) {
-    color: #f2f2f2;
-}
-
-.star_8 .fas:nth-child(5) {
-    color: #f2f2f2;
-}
-
-.star_9 .fas:nth-child(5) {
+.star_grey {
     color: #f2f2f2;
 }
 
@@ -402,10 +382,11 @@ a {
     border-radius: 25px;
     position: relative;
     box-shadow: 5px 5px 5px #f2f2f2, -5px -5px 5px #f2f2f2;
+    margin: 0 5px;
 }
 
 .activity_picture {
-    height: 100%;
+    height: calc(100% - 55px);
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -584,7 +565,7 @@ a {
     }
 
     .anchor::before {
-        content: none;
+        display: none;
     }
 
     .anchor::after {
@@ -612,10 +593,6 @@ a {
 
     .search_and_filter {
         padding: 20px;
-    }
-
-    .btn_filter span {
-        left: 55px;
     }
 
     .search_btn {
