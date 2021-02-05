@@ -117,7 +117,8 @@ a {
     text-align: center;
     font-weight: bold;
     font-size: 1.1rem;
-    max-width:60%;
+    max-width: 60%;
+    outline: none;
 }
 
 .search_btn {
@@ -542,7 +543,7 @@ a {
 
     .logo {
         margin-top: 13px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     .signin {
@@ -554,6 +555,7 @@ a {
         width: 100%;
         justify-content: space-between;
         margin: 0;
+        font-size: 1rem;
     }
 
     .anchor {
@@ -601,7 +603,7 @@ a {
     }
 
     .search_box {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .search_btn span {
@@ -629,6 +631,10 @@ a {
 
     .more {
         margin-left: 9px;
+    }
+
+    .fa-chart-line {
+        margin-left: 40px;
     }
 
     /* activités */
