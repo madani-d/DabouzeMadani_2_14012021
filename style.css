@@ -62,7 +62,7 @@ a {
 .anchor::before {
     content: "";
     position: absolute;
-    top: -54px;
+    top: -40px;
     height: 0px;
     width: 100%;
     background-color: blue;
